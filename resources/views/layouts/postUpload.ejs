@@ -1,0 +1,26 @@
+
+<div class="post">
+   <form action="/post/uploads" method="POST" enctype="multipart/form-data">
+    <div class=" form-control container">
+        <p>Upload Thumbnail</p>
+        <input type="file" id="image" name="image" value="" required>
+    </div>
+    <div class=" form-control container">
+      <p>Hashtag</p>
+      <input class="input-inner" name="hashtag" value="" placeholder="Example: happy, sad, beauty" required>
+    </div>
+    <div class=" form-control container">
+      <p>Title</p>
+      <input name="title" class="input-inner" placeholder="...">
+    </div>
+    <div class=" form-control container">
+      <p>Description</p>
+      <input name="description" class="input-inner" placeholder="...">
+    </div>
+    <div class=" form-control container">
+        <p>Example textarea</p>
+        <textarea name="content" rows="5" cols="10"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary container">publish</button>
+</form> 
+</div>

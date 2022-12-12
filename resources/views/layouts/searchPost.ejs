@@ -1,0 +1,25 @@
+
+<section class="blog"> 
+    <div class="container">
+        <div class="title">
+            <h2>Recent Arts & Designs</h2>
+            <p>RECENT ARTS & DESIGNS ON THE BLOG</p>
+        </div>
+        <div class="blog-content">
+            <% data.forEach(data => { %>
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src= <%- data.img %>  alt="">
+                        <span><i class="fas fa-heart"><%- data.like %></i></span>
+                    </div>
+                    <div class="blog-text">
+                        <span><%- data.timeString %></span>
+                        <h2><%- data.title %></h2>
+                        <p><%- data.description %></p>
+                        <a href=<%- data._id %>>Read More</a>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</section>
